@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  box-shadow: 1px 0px 10px 0px #888888;
+}
+
+.wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+  padding: 7px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8em;
+  color: black;
+  font-weight: 400;
+}
+
+.right-side li {
+  width: 70px;
+  text-align: center;
+  padding: 5px;
+}
+
+.pipe {
+  background: url(./img/pipe.png) no-repeat;
+  background-position: -1px;
+}
+
+.sign {
+  color: blue;
+}
+
+.staycation {
+  background-color: #c2f5ff;
+  font-weight: bold;
+  color: #006efc;
+  height: 33px;
+}
+
+li.icons {
+  width: 40px;
+  vertical-align: 0px;
+}
+
+.bell-icon-li {
+  vertical-align: 5px !important;
+}
+
+.bell-icon {
+  background: url(./img/bell.png);
+  background-repeat: no-repeat;
+  height: 19px;
+  display: block;
+  background-position: 50%;
+  overflow: hidden;
+}
+
+.cart-icon {
+  background: url(./img/cart.png);
+  background-repeat: no-repeat;
+  height: 19px;
+  display: block;
+  background-position: 50%;
+}
+
+.myebay {
+  height: 19px;
+  vertical-align: 10px;
+}
+
+.myebay a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.search-main {
+  width: 100%;
+}
+
+.search-container th {
+  padding: 10px;
+}
+
+.search-container {
+  margin-top: -3px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo {
+  padding-right: 0px !important;
+}
+
+.category {
+  font-weight: 500;
+  font-size: 0.9rem;
+  background: url(./img/arrow-down.png) no-repeat;
+  background-position: 99% 50%;
+  width: 100px;
+  padding-left: 15px !important;
+  padding-right: 20px !important;
+}
+
+th.mainsearch {
+  padding-right: 0px;
+}
+
+.mainsearch {
+  width: 55%;
+  border-radius: 1px solid black;
+}
+
+.outer-input {
+  border: 1px solid #dddddd;
+  width: 100.2%;
+  border-right: none;
+}
+
+.mainsearch input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  padding-left: 14px;
+}
+
+th.dropdown {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.select {
+  height: 40px;
+  width: 160px;
+  border: none;
+  border-left: 1px solid #dddddd;
+}
+
+.select-outer {
+  border: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+}
+
+.search-button {
+  padding-left: 4px;
+}
+
+.search-button button {
+  padding: 12px;
+  width: 89px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0079bc), to(#00509d));
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+}
+
+.advanced p {
+  color: gray;
+  font-size: 0.7rem;
+}
+
+.menu-container {
+  width: 100%;
+}
+
+.menu-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-content {
+  border-top: 1px solid #dddddd;
+}
+
+ul.menu li {
+  color: #555;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.heart::before {
+  content: "";
+  background: url(./img/heart.png) no-repeat;
+  width: 18px;
+  height: 10px;
+  display: inline-block;
+}
+
+.more {
+  display: none;
+  position: relative;
+  background: white;
+}
+
+.more::after {
+  content: "";
+  background: url(./img/more.png) no-repeat;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-position: 100% 74%;
+}
+
+.show {
+  width: 150px;
+  position: absolute;
+  right: -1px;
+  top: 28px;
+  border: 1px solid #dddddd;
+  z-index: -1;
+  background: white;
+  display: none;
+}
+
+ul.show-ul li {
+  display: block;
+  padding: 5px;
+  text-align: left;
+  display: none;
+}
+
+ul.menu li:hover {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  cursor: pointer;
+  color: blue;
+}
+
+.more:hover .show {
+  display: block;
+}
+
+@media only screen and (max-width: 980px) {
+  .advanced {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .staycation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .staycation,
+  .sign-register,
+  .or,
+  .category,
+  .lg-button {
+    display: none;
+  }
+  .sm-button {
+    display: block !important;
+    width: 43px !important;
+  }
+  .btn-serach-sm {
+    background: url(./img/search.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 23px;
+    height: 19px;
+    display: block;
+    background-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .daily-deals,
+  .help {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .mainsearch input {
+    min-width: 172px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  li.deals-bg,
+  li.local-bg {
+    display: none !important;
+  }
+  li.more {
+    display: inline;
+  }
+  .deals-sm,
+  .local-sm {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 942px) {
+  li.motors-bg {
+    display: none !important;
+  }
+  .motors-sm {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 878px) {
+  li.health-bg {
+    display: none !important;
+  }
+  .health-sm {
+    display: block !important;
+  }
+  .menu-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 692px) {
+  li.collectable-bg {
+    display: none !important;
+  }
+  .collectable-sm {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 598px) {
+  li.sports-bg,
+  li.electronics-bg {
+    display: none !important;
+  }
+  .sports-sm,
+  li.electronics-sm {
+    display: block !important;
+  }
+  .menu-container,
+  .container {
+    min-width: 578px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  ul.menu li {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 712px) {
+  ul.menu li {
+    padding: 5px;
+  }
+  .show {
+    top: 24px;
+  }
+}
