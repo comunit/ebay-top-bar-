@@ -29,7 +29,7 @@ li {
 .right-side li {
   width: 70px;
   text-align: center;
-  padding: 5px;
+  padding: 4px;
 }
 
 .pipe {
@@ -48,41 +48,32 @@ li {
   height: 33px;
 }
 
-li.icons {
-  width: 40px;
-  vertical-align: 0px;
+.icons {
+  padding-top: 8px !important;
 }
 
-.bell-icon-li {
-  vertical-align: 5px !important;
+.inner-bell::after {
+  content: "";
+  background: url('./img/bell.png')no-repeat;
+  display: inline-block;
+  width: 15px;
+  height: 18px;
 }
 
-.bell-icon {
-  background: url(./img/bell.png);
-  background-repeat: no-repeat;
-  height: 19px;
-  display: block;
-  background-position: 50%;
-  overflow: hidden;
+.inner-cart::after {
+  content: "";
+  background: url('./img/cart.png') no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 18px;
 }
 
-.cart-icon {
-  background: url(./img/cart.png);
-  background-repeat: no-repeat;
-  height: 19px;
-  display: block;
-  background-position: 50%;
-}
-
-.myebay {
-  height: 19px;
-  vertical-align: 10px;
+div.right-side ul {
+  display: inline-flex;
 }
 
 .myebay a {
   text-decoration: none;
-  color: black;
-  font-weight: 500;
 }
 
 .search-main {
@@ -160,6 +151,7 @@ th.dropdown {
   padding: 12px;
   width: 89px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0079bc), to(#00509d));
+  background: #0067ae;;
   border: none;
   border-radius: 3px;
   color: white;
